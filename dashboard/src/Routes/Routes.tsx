@@ -1,14 +1,26 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
-import PricingPage from "../components/PricingGrid";
+import PricingPage from "../pages/PricingGrid";
+import EditProfile from "../components/EditProfile";
+import ChangePassword from "../components/ChangePassword";
 
 export const router = createBrowserRouter([
     {
         path: "/",
-        element: <App />
+        element: <App />,
+        children: [
+            {
+                path: "editProfile",
+                element: <EditProfile />
+            },
+            {
+                path: "changePassword",
+                element: <ChangePassword />
+            }
+        ]
     },
     {
-        path:"pricingPage",
+        path:"/pricingPage",
         element:<PricingPage />
     }
 ])
