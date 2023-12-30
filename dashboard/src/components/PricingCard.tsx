@@ -16,7 +16,7 @@ const PricingCard: React.FC<PricingCardProps> = ({ plan, isSelected, ind, onSele
   const { title, cost, features } = plan;
   return (
     <div className={"w-full md:w-96 " + (isSelected && "-translate-y-4 transition transform duration-150 ease-in-out")}>
-            <div className={"p-8 bg-gray-800 rounded h-96 relative " + (isSelected && "border-l-[#0469D9] border-b-[#0469D9] border-r-[#4CCEC6] border-t-[#4CCEC6] border-2 transition transform duration-300 ease-in-out")}>
+            <div className={"p-8 bg-[#1E2742] rounded h-96 relative " + (isSelected && "border-l-[#0469D9] border-b-[#0469D9] border-r-[#4CCEC6] border-t-[#4CCEC6] border-2 transition transform duration-300 ease-in-out")}>
               {ind === 1 && <span className="bg-[#CCFBF1] text-[#42B1A5] font-bold px-4 py-2 tracking-widest text-xs absolute right-4 -top-4 rounded-full">Most Popular</span>}
               <div className="mb-6 text-center">
                 <p className="text-xl font-medium tracking-wide text-white">

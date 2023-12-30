@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import InputBox from "../components/InputBox";
 import AnimationWrapper from "../common/animation";
+import googleIcon from "../imgs/google.png";
 
 interface SocialLinks {
   [key:string]: string;
@@ -58,8 +59,7 @@ const EditProfile: React.FC = () => {
   return (
     <AnimationWrapper keyValue={1}>
     <form ref={editProfileForm} className="w-full">
-      <h1 className="max-md:hidden">Edit Profile</h1>
-      <div className="flex flex-col lg:flex-row items-start py-10 gap-8 lg:gap-10">
+      <div className="flex flex-col lg:flex-row items-start pb-10 gap-8 lg:gap-10">
         <div className="max-lg:center mb-5">
           <p className="relative block w-48 h-48 bg-grey rounded-full overflow-hidden border-grey border">
             <img src={profile_img} alt="Profile" />
@@ -99,6 +99,23 @@ const EditProfile: React.FC = () => {
 
               return <InputBox key={i} name={key} type="text" value={link} placeholder="https://" icon={`fi ${key !== "website" ? "fi-brands-" + key : "fi-rr-globe"} text-2xl hover:text-black`} />;
             })}
+          </div>
+
+          <p className="my-6 text-[#bdbcbc]">Link your accounts below</p>
+
+          <div className="flex items-center justify-evenly my-6 flex-wrap gap-4">
+            
+            <button className="whitespace-nowrap my-2 bg-[#1E2742] text-white rounded-full py-3 px-6 text-[16px] capitalize hover:bg-opacity-80 flex items-center justify-center gap-4 w-full center">
+                      <img src={googleIcon} alt={googleIcon} className="w-5" />
+                      Link Google Account
+            </button>
+
+            
+            <button className="whitespace-nowrap my-2 bg-[#1E2742] text-white rounded-full py-3 px-6 text-[16px] capitalize hover:bg-opacity-80 flex items-center justify-center gap-4 w-full center">
+                      <i className="fi fi fi-brands-github text-xl" />
+                      Link github Account
+            </button>
+
           </div>
 
           <button className="btn-dark w-auto px-10" type="submit">
