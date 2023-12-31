@@ -1,7 +1,5 @@
-# Project Name: Genoshi Dashboard
-
 ## Overview
-This repository contains the code for the Genoshi Dashboard, a web application developed as part of a frontend test for a company. The dashboard provides various features, including a Profile Dashboard, Create New Graph Page, Graph Details Page, Account Settings, and a Pricing page. The application is built using TypeScript, React, and Tailwind CSS.
+This repository contains the code for the Dashboard, a web template developed as part of a frontend test for a company. The dashboard provides various features, including a Profile Dashboard, Create New Graph Page, Graph Details Page, Account Settings, and a Pricing page. The application is built using TypeScript, React, and Tailwind CSS.
 
 ## Website Link
 [Genoshi Dashboard](https://genoshi-three.vercel.app/)
